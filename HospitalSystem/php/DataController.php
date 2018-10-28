@@ -1,0 +1,93 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Kaulitz
+ * Date: 28/10/18
+ * Time: 17:46
+ */
+require_once ("DoctorsDao.php");
+require_once ("Doctors.php");
+require_once ("Singleton.php");
+require_once ('Patients.php');
+require_once  ("PatientsDao.php");
+require_once ("MedicalRecords.php");
+require_once ("MedicalRecordsDao.php");
+class DataController implements Singleton {
+     private static $datC;
+     private $currentUser;
+    /*
+     *
+     *   1 - create admin
+     *   2 - create doctor, patient and mdrecords // when create a patient create md with empty mdrecord
+     *   3 - update  doctor, patient and mdrecords
+     *   4 -  see all patients
+     *   4 - select a patient and update it
+     *   5- set a current user
+     *   6 - verify if is an a Admin
+     *
+     */
+
+
+    /**
+     * DataController constructor.
+     */
+    private function __construct(){
+        $this->loadData( Doctors::getIt(),DoctorsDao::retrieve());
+        $this->loadData( Patients::getIt(),PatientsDao::retrieve());
+        $this->loadData(MedicalRecords::getIt(),MedicalRecordsDao::retrieve());
+    }
+
+    private function loadData($obj,$data){
+        $obj->retrieve($data);
+    }
+
+    public function login($username,$pwd){
+        $this->currentUser = Doctors::getIt()->search($username);
+    }
+
+    public  function updateDoctor($CPF,$name,$pwd){
+        Doctors::getIt()->insert($CPF,$name,$pwd);
+        DoctorsDao::update($pwd,$name,$CPF);
+    }
+
+    public function updatePatient($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies){
+        Patients::getIt()->insert($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies);
+        PatientsDao::update($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies);
+    }
+
+    public function updateMedicalRecord($CPF,$data){
+      MedicalRecords::getIt()->insert($CPF,$data);
+      MedicalRecordsDao::update($CPF,$data);
+    }
+    public function createDoctor($CPF,$name,$pwd){
+        Doctors::getIt()->insert($CPF,$name,$pwd);
+        DoctorsDao::create($pwd,$name,$CPF);
+    }
+
+    public  function createPatient($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies){
+        Patients::getIt()->insert($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies);
+    }
+    public function createMedicalRecord($CPF,$data){
+        MedicalRecords::getIt()->insert($CPF,$data);
+        MedicalRecordsDao::create($CPF,$data);
+    }
+
+    public  function searchPatient($CPF){
+        return Patients::getIt()->search($CPF);
+    }
+
+    public function searchDoctor($CPF){
+        return Doctors::getIt()->search($CPF);
+    }
+
+    public function searchMedicalRecord($CPF){
+        return MedicalRecords::getIt()->search($CPF);
+    }
+
+    static public function getIt(){
+        if(self::$datC === null){
+            self::$datC = new DataController();
+        }
+        return self::$datC;
+    }
+}

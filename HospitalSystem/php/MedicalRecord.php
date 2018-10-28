@@ -6,24 +6,42 @@
  * Time: 09:32
  */
 
-class MedicalRecord
-{
+class MedicalRecord{
+
    private $data;
+   private $CPF;
 
     /**
      * @return mixed
      */
-    public function getData()
-    {
+    public function getData(){
+
         return $this->data;
     }
 
     /**
      * @param mixed $data
      */
-    public function setData($data)
-    {
+    public function setData($data){
         $this->data = $data;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCPF()
+    {
+        return $this->CPF;
+    }
+
+    /**
+     * @param mixed $CPF
+     */
+    public function setCPF($CPF)
+    {
+        $this->CPF = $CPF;
+    }
+
+
    
 }

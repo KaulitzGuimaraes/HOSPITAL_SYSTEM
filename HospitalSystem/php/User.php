@@ -7,8 +7,7 @@
  */
 require_once ("AccessManagement.php");
 require_once ("Person.php");
-abstract class  User extends Person implements AccessManagement
-{
+abstract class  User extends Person implements AccessManagement{
     private $pwd;
     private $username;
 
@@ -19,18 +18,16 @@ abstract class  User extends Person implements AccessManagement
      * @param $name
      * @param $CPF
      */
-    protected function __construct($pwd, $username,$name,$CPF)
-    {
-        parent::__construct($name,$CPF);
+    protected function __construct($pwd, $username, $name, $CPF){
+        parent::__construct($name, $CPF);
         $this->pwd = $pwd;
-        $this->username = $CPF ;
+        $this->username = $CPF;
     }
 
     /**
      * @param mixed $pwd
      */
-    public function setPwd($pwd)
-    {
+    public function setPwd($pwd){
         $this->pwd = $pwd;
     }
 
@@ -38,21 +35,16 @@ abstract class  User extends Person implements AccessManagement
     /**
      * @return mixed
      */
-    public function getPwd()
-    {
+    public function getPwd(){
         return $this->pwd;
     }
 
     /**
      * @return mixed
      */
-    public function getUsername()
-    {
+    public function getUsername(){
         return $this->username;
     }
-
-
-
 
 
 }

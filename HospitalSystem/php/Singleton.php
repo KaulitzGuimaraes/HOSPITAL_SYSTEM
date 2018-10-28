@@ -8,5 +8,5 @@
 
 interface Singleton
 {
-   public function getIt();
+   static public function getIt();
 }

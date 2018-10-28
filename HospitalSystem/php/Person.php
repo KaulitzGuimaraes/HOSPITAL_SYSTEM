@@ -6,8 +6,7 @@
  * Time: 08:53
  */
 
-abstract class Person
-{
+abstract class Person{
     private $name;
     private $CPF;
 
@@ -15,8 +14,7 @@ abstract class Person
      * Person constructor.
      * @param $name
      * @param $CPF
-     */
-    protected function __construct($name, $CPF)
+     */protected function __construct($name, $CPF)
     {
         $this->name = $name;
         $this->CPF = $CPF;
@@ -25,31 +23,28 @@ abstract class Person
     /**
      * @return mixed
      */
-    public function getName()
-    {
+    public function getName(){
         return $this->name;
     }
 
     /**
      * @param mixed $name
      */
-    public function setName($name)
-    {
+    public function setName($name){
         $this->name = $name;
     }
 
     /**
      * @return mixed
      */
-    public function getCPF()
-    {
+    public function getCPF(){
         return $this->CPF;
     }
 
 
-  public function __toString()
-  {
-     return $this->CPF;
+  public function __toString(){
+
+     return (string)$this->CPF;
   }
 
 }

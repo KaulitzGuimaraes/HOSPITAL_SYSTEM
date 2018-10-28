@@ -7,6 +7,7 @@
  */
 
 require_once ("User.php");
+
 class Doctor extends User
 {
 
@@ -18,12 +19,10 @@ class Doctor extends User
      * @param $name
      * @param $CPF
      */
-    public function __construct($pwd, $username,$name,$CPF)
-    {
+    public function __construct($pwd, $username,$name,$CPF){
         parent::__construct($pwd, $username, $name, $CPF);
     }
-    public function IsAnAdmin()
-    {
+    public function IsAnAdmin(){
         return false;
     }
 }

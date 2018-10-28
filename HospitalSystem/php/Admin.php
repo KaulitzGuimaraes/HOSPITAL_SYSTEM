@@ -21,7 +21,7 @@ class Admin extends User implements Singleton
      */
     protected function __construct()
     {
-        parent::__construct("admmin","admin","admn","admin");
+        parent::__construct("admin","admin","admn","admin");
 
     }
 
@@ -30,7 +30,7 @@ class Admin extends User implements Singleton
        return true;
     }
 
-    public function getIt()
+   static public function getIt()
     {
         if(Admin::$admin === null){
             Admin::$admin  = new Admin();

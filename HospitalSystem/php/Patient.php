@@ -7,7 +7,7 @@
  */
 
 require_once ("Person.php");
-class Pacient extends Person
+class Patient extends Person
 {
    private $tel;
    private $email;
@@ -17,7 +17,9 @@ class Pacient extends Person
    private $medicalRecords;
 
     /**
-     * Pacient constructor.
+     * Patient constructor.
+     * @param $name
+     * @param $CPF
      * @param $telphone
      * @param $email
      * @param $bloodType
