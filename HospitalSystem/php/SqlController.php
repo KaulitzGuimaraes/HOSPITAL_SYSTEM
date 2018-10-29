@@ -6,8 +6,9 @@
  * Time: 15:15
  */
 
- class SqlController{
-  public static  $queryTables = "
+class SqlController
+{
+    public static $queryTables = "
    CREATE TABLE PERSON (
 CPF VARCHAR(255),
 name VARCHAR(255),
@@ -52,7 +53,7 @@ FROM PATIENT
 INNER JOIN PERSON
 WHERE PERSON.CPF = PATIENT.CPF
    ";
-   static private  $pdo;
+    static private $pdo;
 
     /**
      * @return mixed
@@ -60,26 +61,25 @@ WHERE PERSON.CPF = PATIENT.CPF
     public static function getPdo(){
 
         try {
-            if(self::$pdo === null){
+            if (self::$pdo === null) {
                 $host = '127.0.0.1';
-                $db   = 'HPS';
+                $db = 'HPS';
                 $user = 'root';
                 $pass = 'mysql';
                 $charset = 'utf8mb4';
                 $options = [
-                    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                    PDO::ATTR_EMULATE_PREPARES   => false,
+                    PDO::ATTR_EMULATE_PREPARES => false,
                 ];
                 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-                self::$pdo =   new PDO($dsn, $user, $pass, $options);
+                self::$pdo = new PDO($dsn, $user, $pass, $options);
 
-                }
+            }
 
-        }catch (\PDOException $e) {
+        } catch (\PDOException $e) {
             self::getErrorPopUp();
-        }
-        finally{
+        } finally {
 
             return self::$pdo;
 
@@ -88,97 +88,94 @@ WHERE PERSON.CPF = PATIENT.CPF
     }
 
 
-
-     /**
-      * @param $tableName
-      * @param $parameters
-      * @param $values
-      * @return string
-      */
-     static  public function createQuery($tableName, $parameters,$values){
-         $sql = "
+    /**
+     * @param $tableName
+     * @param $parameters
+     * @param $values
+     * @return string
+     */
+    static public function createQuery($tableName, $parameters, $values){
+        $sql = "
          INSERT INTO $tableName ($parameters)
                           VALUES ($values);
          ";
-         return $sql;
-     }
+        return $sql;
+    }
 
 
-     /**
-      * @param $tableName
-      * @param $setQuery
-      * @param $valuesTochange
-      * @return string
-      */
-     static   public function updateQuery($tableName,$setQuery,$condition){
+    /**
+     * @param $tableName
+     * @param $setQuery
+     * @param $valuesTochange
+     * @return string
+     */
+    static public function updateQuery($tableName, $setQuery, $condition){
 
-         $sql =" UPDATE $tableName 
+        $sql = " UPDATE $tableName 
              SET $setQuery
              WHERE  $condition";
 
-         return $sql;
-     }
+        return $sql;
+    }
 
 
-
-     /**
-      * @param $tableName
-      * @return string
-      */
-   static  public function selectAllQuery($tableName){
-         $sql = " SELECT * 
+    /**
+     * @param $tableName
+     * @return string
+     */
+    static public function selectAllQuery($tableName){
+        $sql = " SELECT * 
            FROM $tableName
            ";
-         return $sql;
-     }
+        return $sql;
+    }
 
 
-     /**
-      * @param $tableName
-      * @param $condition
-      * @return string
-      */
-    static public function selectOneQuery($tableName,$condition){
-         $sql = " SELECT * 
+    /**
+     * @param $tableName
+     * @param $condition
+     * @return string
+     */
+    static public function selectOneQuery($tableName, $condition){
+        $sql = " SELECT * 
            FROM $tableName
            WHERE $condition ;
            ";
         return $sql;
-     }
-     static public function getErrorPopUp(){
-         echo '<script type="text/javascript">',
-         'alert("CANNOT DO THIS OPERATION")',
-         '</script>';
-      }
-     static public function runQuery($query)
-     {
-         try {
+    }
+
+    static public function getErrorPopUp(){
+        echo '<script type="text/javascript">',
+        'alert("CANNOT DO THIS OPERATION")',
+        '</script>';
+    }
+
+    static public function runQuery($query){
+        try {
 
             return self::getPdo()->query($query);
 
-         }catch (\PDOException $e) {
+        } catch (\PDOException $e) {
             self:: getErrorPopUp();
-         }
-     }
+        }
+    }
 
-     static public function fetchAll($queryResult){
+    static public function fetchAll($queryResult){
         return $queryResult->fetchAll(PDO::FETCH_ASSOC);
-     }
-     static public function fetch($queryResult){
-         return $queryResult->fetch(PDO::FETCH_ASSOC);
-     }
+    }
 
-     static public function runExec($query)
-     {
-         try {
-             self::getPdo()->exec($query);
+    static public function fetch($queryResult){
+        return $queryResult->fetch(PDO::FETCH_ASSOC);
+    }
 
-         }catch (\PDOException $e) {
-             self:: getErrorPopUp();
-         }
-     }
+    static public function runExec($query){
+        try {
+            self::getPdo()->exec($query);
 
-
+        } catch (\PDOException $e) {
+            self:: getErrorPopUp();
+        }
+    }
 
 
 }

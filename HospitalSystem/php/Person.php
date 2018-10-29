@@ -14,8 +14,7 @@ abstract class Person{
      * Person constructor.
      * @param $name
      * @param $CPF
-     */protected function __construct($name, $CPF)
-    {
+     */protected function __construct($name, $CPF){
         $this->name = $name;
         $this->CPF = $CPF;
     }

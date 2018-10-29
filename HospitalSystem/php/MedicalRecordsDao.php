@@ -7,8 +7,7 @@
  */
 require_once ("Dao.php");
 require_once ("DaoRetrieve.php");
-class MedicalRecordsDao implements DaoRetrieve
-{
+class MedicalRecordsDao implements DaoRetrieve{
     static private  $tableName ='MEDICALRECORD' ;
 
     static function create($CPF,$data){

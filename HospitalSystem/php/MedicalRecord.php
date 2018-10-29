@@ -16,8 +16,7 @@ class MedicalRecord{
      * @param $data
      * @param $CPF
      */
-    public function __construct( $CPF,$data)
-    {
+    public function __construct( $CPF,$data){
         $this->data = $data;
         $this->CPF = $CPF;
     }
@@ -41,20 +40,17 @@ class MedicalRecord{
     /**
      * @return mixed
      */
-    public function getCPF()
-    {
+    public function getCPF(){
         return $this->CPF;
     }
 
     /**
      * @param mixed $CPF
      */
-    public function setCPF($CPF)
-    {
+    public function setCPF($CPF){
         $this->CPF = $CPF;
     }
-    public function __toString()
-    {
+    public function __toString(){
         return $this->CPF;
     }
 

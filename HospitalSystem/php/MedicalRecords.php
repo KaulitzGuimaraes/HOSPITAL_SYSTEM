@@ -9,8 +9,7 @@
 require_once ("Singleton.php");
 require_once ("MedicalRecord.php");
 require_once ("RetrieveData.php");
-class MedicalRecords implements Singleton,RetrieveData
-{
+class MedicalRecords implements Singleton,RetrieveData{
  static private $medicalRecords;
   private $medicalRecordsHash;
 
@@ -42,8 +41,7 @@ class MedicalRecords implements Singleton,RetrieveData
         }
     }
 
-    static public function getIt()
-    {
+    static public function getIt(){
         if(self::$medicalRecords === null){
             self::$medicalRecords = new  MedicalRecords();
         }

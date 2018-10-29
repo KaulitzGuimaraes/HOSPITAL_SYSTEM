@@ -43,8 +43,7 @@ class  Dao {
           return SqlController::fetch($result);
     }
 
-    public static function getCPFCondition($CPF)
-    {
+    public static function getCPFCondition($CPF){
         $condition = "CPF = '$CPF'";
         return $condition;
     }
