@@ -39,7 +39,7 @@ class Patients implements Singleton,RetrieveData
 
         foreach ($data as $patient){
             $this->insert($patient['name'],$patient['CPF'],$patient['tel'],$patient['email'],
-                $patient['bloodType'],$patient['$healthPlan'],$patient['allergies']);
+                $patient['bloodType'],$patient['healthPlan'],$patient['allergies']);
 
         }
     }
