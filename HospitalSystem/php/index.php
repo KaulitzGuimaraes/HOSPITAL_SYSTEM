@@ -17,6 +17,9 @@ $pwd = "BBBBBBBBB";
 //DataController::getIt()->createDoctor('12018180','Kaulitz','rihanna');
 //DataController::getIt()->createPatient($name,$CPF,'123456789','Ul@gmail.com','O+','bradesco','all possibles');
 //DataController::getIt()->createMedicalRecord($CPF,"IDK what is that");
+//DataController::getIt()->updateDoctor('12018180','Kaulitz','brit');
+//DataController::getIt()->updatePatient($name,$CPF,'123456789','Ul@gmail.com','O+','AMIL','all possibles');
+
 print_r(DataController::getIt()->searchMedicalRecord($CPF));
 echo "<br/>";
 print_r(DataController::getIt()->searchPatient($CPF));

@@ -14,16 +14,16 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="230">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
-                <marker date="1540773479373" expanded="true" signature="1285:1346" ph="INSERT INTO PERSON... " />
-                <marker date="1540773479373" expanded="true" signature="1285:1348" ph="INSERT INTO PERSON... " />
-                <marker date="1540773479373" expanded="true" signature="1285:1351" ph="INSERT INTO PERSON... " />
-                <marker date="1540773479373" expanded="true" signature="1285:1358" ph="INSERT INTO PERSON... " />
-                <marker date="1540773479373" expanded="true" signature="1285:1363" ph="INSERT INTO PERSON... " />
-                <marker date="1540773479373" expanded="true" signature="1377:1409" ph="SELECT * FRO... PERSON" />
-                <marker date="1540773479373" expanded="true" signature="1430:1503" ph="UPDATE PERSON... " />
+                <marker date="1540774117411" expanded="true" signature="1465:1526" ph="INSERT INTO PERSON... " />
+                <marker date="1540774117411" expanded="true" signature="1465:1528" ph="INSERT INTO PERSON... " />
+                <marker date="1540774117411" expanded="true" signature="1465:1531" ph="INSERT INTO PERSON... " />
+                <marker date="1540774117411" expanded="true" signature="1465:1538" ph="INSERT INTO PERSON... " />
+                <marker date="1540774117411" expanded="true" signature="1465:1543" ph="INSERT INTO PERSON... " />
+                <marker date="1540774117411" expanded="true" signature="1557:1589" ph="SELECT * FRO... PERSON" />
+                <marker date="1540774117411" expanded="true" signature="1610:1683" ph="UPDATE PERSON... " />
               </folding>
             </state>
           </provider>
@@ -52,8 +52,18 @@
       <file leaf-file-name="MedicalRecordsDao.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/MedicalRecordsDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+            <state relative-caret-position="255">
+              <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dao.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Dao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -62,29 +72,29 @@
       <file leaf-file-name="SqlController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/SqlController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="133">
+              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
-                <marker date="1540773152366" expanded="true" signature="148:225" ph="CREATE TABLE... PERSON" />
-                <marker date="1540773152366" expanded="true" signature="228:371" ph="CREATE TABLE... USER" />
-                <marker date="1540773152366" expanded="true" signature="374:583" ph="CREATE TABLE... PACIENT" />
-                <marker date="1540773152366" expanded="true" signature="586:695" ph="CREATE TABLE... MEDICALRECORD" />
-                <marker date="1540773152366" expanded="true" signature="697:790" ph="create view doctor... " />
-                <marker date="1540773152366" expanded="true" signature="720:790" ph="SELECT * fro... PERSON" />
-                <marker date="1540773152366" expanded="true" signature="794:993" ph="CREATE VIEW PATIENTS... " />
-                <marker date="1540773152366" expanded="true" signature="818:993" ph="SELECT PERSO... PATIENT" />
-                <marker date="1540773152366" expanded="true" signature="2107:2178" ph="INSERT INTO $... " />
-                <marker date="1540773152366" expanded="true" signature="2107:2186" ph="INSERT INTO ${$tableName}... " />
-                <marker date="1540773152366" expanded="true" signature="2447:2512" ph="UPDATE PERSON... " />
-                <marker date="1540773152366" expanded="true" signature="2447:2513" ph="UPDATE ${$tableName}... " />
-                <marker date="1540773152366" expanded="true" signature="2447:2514" ph="UPDATE ${$tableName}... " />
-                <marker date="1540773152366" expanded="true" signature="2447:2523" ph="UPDATE ${$tableName}... " />
-                <marker date="1540773152366" expanded="true" signature="2447:2536" ph="UPDATE PERSON... " />
-                <marker date="1540773152366" expanded="true" signature="2564:2567" ph="/** * @param... " />
-                <marker date="1540773152366" expanded="true" signature="2564:2625" ph="/** * @param... " />
-                <marker date="1540773152366" expanded="true" signature="2699:2725" ph="SELECT * FRO... PERSON" />
-                <marker date="1540773152366" expanded="true" signature="2958:3011" ph="SELECT * FRO... ${$tableName}" />
-                <marker date="1540773152366" expanded="true" signature="2958:3012" ph="SELECT * FRO... ${$tableName}" />
+                <marker date="1540773951312" expanded="true" signature="148:225" ph="CREATE TABLE... PERSON" />
+                <marker date="1540773951312" expanded="true" signature="228:371" ph="CREATE TABLE... USER" />
+                <marker date="1540773951312" expanded="true" signature="374:583" ph="CREATE TABLE... PACIENT" />
+                <marker date="1540773951312" expanded="true" signature="586:695" ph="CREATE TABLE... MEDICALRECORD" />
+                <marker date="1540773951312" expanded="true" signature="697:790" ph="create view doctor... " />
+                <marker date="1540773951312" expanded="true" signature="720:790" ph="SELECT * fro... PERSON" />
+                <marker date="1540773951312" expanded="true" signature="794:993" ph="CREATE VIEW PATIENTS... " />
+                <marker date="1540773951312" expanded="true" signature="818:993" ph="SELECT PERSO... PATIENT" />
+                <marker date="1540773951312" expanded="true" signature="2107:2178" ph="INSERT INTO $... " />
+                <marker date="1540773951312" expanded="true" signature="2107:2186" ph="INSERT INTO ${$tableName}... " />
+                <marker date="1540773951312" expanded="true" signature="2448:2513" ph="UPDATE PERSON... " />
+                <marker date="1540773951312" expanded="true" signature="2448:2514" ph="UPDATE ${$tableName}... " />
+                <marker date="1540773951312" expanded="true" signature="2448:2515" ph="UPDATE ${$tableName}... " />
+                <marker date="1540773951312" expanded="true" signature="2448:2524" ph="UPDATE ${$tableName}... " />
+                <marker date="1540773951312" expanded="true" signature="2448:2537" ph="UPDATE PERSON... " />
+                <marker date="1540773951312" expanded="true" signature="2565:2568" ph="/** * @param... " />
+                <marker date="1540773951312" expanded="true" signature="2565:2626" ph="/** * @param... " />
+                <marker date="1540773951312" expanded="true" signature="2700:2726" ph="SELECT * FRO... PERSON" />
+                <marker date="1540773951312" expanded="true" signature="2959:3012" ph="SELECT * FRO... ${$tableName}" />
+                <marker date="1540773951312" expanded="true" signature="2959:3013" ph="SELECT * FRO... ${$tableName}" />
               </folding>
             </state>
           </provider>
@@ -125,17 +135,17 @@
         <option value="$PROJECT_DIR$/php/Singleton.php" />
         <option value="$PROJECT_DIR$/php/Admin.php" />
         <option value="$PROJECT_DIR$/php/DaoRetrieve.php" />
-        <option value="$PROJECT_DIR$/php/MedicalRecordsDao.php" />
         <option value="$PROJECT_DIR$/php/RetrieveData.php" />
         <option value="$PROJECT_DIR$/php/Doctors.php" />
         <option value="$PROJECT_DIR$/php/Patients.php" />
-        <option value="$PROJECT_DIR$/php/Dao.php" />
         <option value="$PROJECT_DIR$/php/DoctorsDao.php" />
         <option value="$PROJECT_DIR$/php/DataController.php" />
         <option value="$PROJECT_DIR$/php/MedicalRecords.php" />
         <option value="$PROJECT_DIR$/php/MedicalRecord.php" />
-        <option value="$PROJECT_DIR$/php/SqlController.php" />
         <option value="$PROJECT_DIR$/php/PatientsDao.php" />
+        <option value="$PROJECT_DIR$/php/SqlController.php" />
+        <option value="$PROJECT_DIR$/php/MedicalRecordsDao.php" />
+        <option value="$PROJECT_DIR$/php/Dao.php" />
         <option value="$PROJECT_DIR$/php/index.php" />
       </list>
     </option>
@@ -233,12 +243,12 @@
       <workItem from="1540682900307" duration="3266000" />
       <workItem from="1540746864435" duration="1308000" />
       <workItem from="1540748719912" duration="19349000" />
-      <workItem from="1540771675225" duration="1669000" />
+      <workItem from="1540771675225" duration="2302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31832000" />
+    <option name="totallyTimeSpent" value="32465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -581,18 +591,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Dao.php">
+    <entry file="file://$PROJECT_DIR$/php/PatientsDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/MedicalRecordsDao.php">
+    <entry file="file://$PROJECT_DIR$/php/MedicalRecords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+        <state relative-caret-position="148">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -607,38 +617,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/SqlController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="133">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
-            <marker date="1540773152366" expanded="true" signature="148:225" ph="CREATE TABLE... PERSON" />
-            <marker date="1540773152366" expanded="true" signature="228:371" ph="CREATE TABLE... USER" />
-            <marker date="1540773152366" expanded="true" signature="374:583" ph="CREATE TABLE... PACIENT" />
-            <marker date="1540773152366" expanded="true" signature="586:695" ph="CREATE TABLE... MEDICALRECORD" />
-            <marker date="1540773152366" expanded="true" signature="697:790" ph="create view doctor... " />
-            <marker date="1540773152366" expanded="true" signature="720:790" ph="SELECT * fro... PERSON" />
-            <marker date="1540773152366" expanded="true" signature="794:993" ph="CREATE VIEW PATIENTS... " />
-            <marker date="1540773152366" expanded="true" signature="818:993" ph="SELECT PERSO... PATIENT" />
-            <marker date="1540773152366" expanded="true" signature="2107:2178" ph="INSERT INTO $... " />
-            <marker date="1540773152366" expanded="true" signature="2107:2186" ph="INSERT INTO ${$tableName}... " />
-            <marker date="1540773152366" expanded="true" signature="2447:2512" ph="UPDATE PERSON... " />
-            <marker date="1540773152366" expanded="true" signature="2447:2513" ph="UPDATE ${$tableName}... " />
-            <marker date="1540773152366" expanded="true" signature="2447:2514" ph="UPDATE ${$tableName}... " />
-            <marker date="1540773152366" expanded="true" signature="2447:2523" ph="UPDATE ${$tableName}... " />
-            <marker date="1540773152366" expanded="true" signature="2447:2536" ph="UPDATE PERSON... " />
-            <marker date="1540773152366" expanded="true" signature="2564:2567" ph="/** * @param... " />
-            <marker date="1540773152366" expanded="true" signature="2564:2625" ph="/** * @param... " />
-            <marker date="1540773152366" expanded="true" signature="2699:2725" ph="SELECT * FRO... PERSON" />
-            <marker date="1540773152366" expanded="true" signature="2958:3011" ph="SELECT * FRO... ${$tableName}" />
-            <marker date="1540773152366" expanded="true" signature="2958:3012" ph="SELECT * FRO... ${$tableName}" />
+            <marker date="1540773951312" expanded="true" signature="148:225" ph="CREATE TABLE... PERSON" />
+            <marker date="1540773951312" expanded="true" signature="228:371" ph="CREATE TABLE... USER" />
+            <marker date="1540773951312" expanded="true" signature="374:583" ph="CREATE TABLE... PACIENT" />
+            <marker date="1540773951312" expanded="true" signature="586:695" ph="CREATE TABLE... MEDICALRECORD" />
+            <marker date="1540773951312" expanded="true" signature="697:790" ph="create view doctor... " />
+            <marker date="1540773951312" expanded="true" signature="720:790" ph="SELECT * fro... PERSON" />
+            <marker date="1540773951312" expanded="true" signature="794:993" ph="CREATE VIEW PATIENTS... " />
+            <marker date="1540773951312" expanded="true" signature="818:993" ph="SELECT PERSO... PATIENT" />
+            <marker date="1540773951312" expanded="true" signature="2107:2178" ph="INSERT INTO $... " />
+            <marker date="1540773951312" expanded="true" signature="2107:2186" ph="INSERT INTO ${$tableName}... " />
+            <marker date="1540773951312" expanded="true" signature="2448:2513" ph="UPDATE PERSON... " />
+            <marker date="1540773951312" expanded="true" signature="2448:2514" ph="UPDATE ${$tableName}... " />
+            <marker date="1540773951312" expanded="true" signature="2448:2515" ph="UPDATE ${$tableName}... " />
+            <marker date="1540773951312" expanded="true" signature="2448:2524" ph="UPDATE ${$tableName}... " />
+            <marker date="1540773951312" expanded="true" signature="2448:2537" ph="UPDATE PERSON... " />
+            <marker date="1540773951312" expanded="true" signature="2565:2568" ph="/** * @param... " />
+            <marker date="1540773951312" expanded="true" signature="2565:2626" ph="/** * @param... " />
+            <marker date="1540773951312" expanded="true" signature="2700:2726" ph="SELECT * FRO... PERSON" />
+            <marker date="1540773951312" expanded="true" signature="2959:3012" ph="SELECT * FRO... ${$tableName}" />
+            <marker date="1540773951312" expanded="true" signature="2959:3013" ph="SELECT * FRO... ${$tableName}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/MedicalRecords.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,26 +652,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/PatientsDao.php">
+    <entry file="file://$PROJECT_DIR$/php/MedicalRecordsDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Dao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="230">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1540773479373" expanded="true" signature="1285:1346" ph="INSERT INTO PERSON... " />
-            <marker date="1540773479373" expanded="true" signature="1285:1348" ph="INSERT INTO PERSON... " />
-            <marker date="1540773479373" expanded="true" signature="1285:1351" ph="INSERT INTO PERSON... " />
-            <marker date="1540773479373" expanded="true" signature="1285:1358" ph="INSERT INTO PERSON... " />
-            <marker date="1540773479373" expanded="true" signature="1285:1363" ph="INSERT INTO PERSON... " />
-            <marker date="1540773479373" expanded="true" signature="1377:1409" ph="SELECT * FRO... PERSON" />
-            <marker date="1540773479373" expanded="true" signature="1430:1503" ph="UPDATE PERSON... " />
+            <marker date="1540774117411" expanded="true" signature="1465:1526" ph="INSERT INTO PERSON... " />
+            <marker date="1540774117411" expanded="true" signature="1465:1528" ph="INSERT INTO PERSON... " />
+            <marker date="1540774117411" expanded="true" signature="1465:1531" ph="INSERT INTO PERSON... " />
+            <marker date="1540774117411" expanded="true" signature="1465:1538" ph="INSERT INTO PERSON... " />
+            <marker date="1540774117411" expanded="true" signature="1465:1543" ph="INSERT INTO PERSON... " />
+            <marker date="1540774117411" expanded="true" signature="1557:1589" ph="SELECT * FRO... PERSON" />
+            <marker date="1540774117411" expanded="true" signature="1610:1683" ph="UPDATE PERSON... " />
           </folding>
         </state>
       </provider>

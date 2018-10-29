@@ -111,6 +111,7 @@ WHERE PERSON.CPF = PATIENT.CPF
       * @return string
       */
      static   public function updateQuery($tableName,$setQuery,$condition){
+
          $sql =" UPDATE $tableName 
              SET $setQuery
              WHERE  $condition";

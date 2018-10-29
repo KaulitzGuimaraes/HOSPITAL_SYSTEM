@@ -15,7 +15,7 @@ class MedicalRecordsDao implements DaoRetrieve
          Dao::create("CPF,data","'$CPF','$data'",self::$tableName);
     }
     static function update($CPF,$data){
-        Dao::update(self::$tableName,"data = '$data'",Dao::retrieve($CPF));
+        Dao::update(self::$tableName,"data = '$data'",Dao::getCPFCondition($CPF));
     }
 
     static function retrieve(){
