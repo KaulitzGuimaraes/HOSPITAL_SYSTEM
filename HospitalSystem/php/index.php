@@ -15,8 +15,8 @@ $CPF = '444444';
 $name = "Thalles";
 $pwd = "BBBBBBBBB";
 
-
-
+DataController::getIt()->createPatient($name,$CPF,'123456789','Kau@gmail.com','O+','bradesco','all possibles');
+print_r(DataController::getIt()->searchPatient($CPF));
 /*
 $p->getIt()->insertDoctor(1100000,"kau","olar");
 $host = '127.0.0.1';

@@ -13,19 +13,10 @@ require_once  ("PatientsDao.php");
 require_once ("MedicalRecords.php");
 require_once ("MedicalRecordsDao.php");
 class DataController implements Singleton {
+
      private static $datC;
      private $currentUser;
-    /*
-     *
-     *   1 - create admin
-     *   2 - create doctor, patient and mdrecords // when create a patient create md with empty mdrecord
-     *   3 - update  doctor, patient and mdrecords
-     *   4 -  see all patients
-     *   4 - select a patient and update it
-     *   5- set a current user
-     *   6 - verify if is an a Admin
-     *
-     */
+
 
 
     /**
@@ -66,6 +57,7 @@ class DataController implements Singleton {
 
     public  function createPatient($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies){
         Patients::getIt()->insert($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies);
+        PatientsDao::create($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies);
     }
     public function createMedicalRecord($CPF,$data){
         MedicalRecords::getIt()->insert($CPF,$data);
