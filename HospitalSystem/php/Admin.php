@@ -30,11 +30,17 @@ class Admin extends User implements Singleton
        return true;
     }
 
+    
+
    static public function getIt()
     {
         if(Admin::$admin === null){
             Admin::$admin  = new Admin();
         }
         return Admin::$admin;
+    }
+
+    function __toString(){
+        return $this->getUsername() . $this->getCPF();
     }
 }

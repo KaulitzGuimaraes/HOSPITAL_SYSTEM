@@ -9,6 +9,7 @@ require_once ("Singleton.php");
 require_once ("HashMap.php");
 require_once ("Doctor.php");
 require_once ("RetrieveData.php");
+require_once ("Admin.php");
 class Doctors implements Singleton, RetrieveData
 {
     private $doctorHash;
@@ -41,7 +42,27 @@ class Doctors implements Singleton, RetrieveData
         }
     }
 
-
+    public function machPwd($username,$pwd,&$usr){
+        try{
+            $concat = $username. $pwd;
+             if(Admin::getIt() === $concat ){
+                    $usr = Admin::getIt();
+                    return true;
+             }else{   
+            $usr = $this->search(trim($username));
+            if($usr == null)
+                 throw new Exception();
+            $isPwdMatching = trim($usr->getPwd()) === trim($pwd);
+            if(!$isPwdMatching)
+                throw new Exception();   
+            return $isPwdMatching;
+        }
+        }catch(Exception $e){
+                $usr = null;
+                return false;
+        }
+       
+    }
     /**
      * @return mixed
      */
