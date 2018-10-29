@@ -11,19 +11,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
               <folding>
-                <marker date="1540774117411" expanded="true" signature="1465:1526" ph="INSERT INTO PERSON... " />
-                <marker date="1540774117411" expanded="true" signature="1465:1528" ph="INSERT INTO PERSON... " />
-                <marker date="1540774117411" expanded="true" signature="1465:1531" ph="INSERT INTO PERSON... " />
-                <marker date="1540774117411" expanded="true" signature="1465:1538" ph="INSERT INTO PERSON... " />
-                <marker date="1540774117411" expanded="true" signature="1465:1543" ph="INSERT INTO PERSON... " />
-                <marker date="1540774117411" expanded="true" signature="1557:1589" ph="SELECT * FRO... PERSON" />
-                <marker date="1540774117411" expanded="true" signature="1610:1683" ph="UPDATE PERSON... " />
+                <marker date="1540774577767" expanded="true" signature="1453:1514" ph="INSERT INTO PERSON... " />
+                <marker date="1540774577767" expanded="true" signature="1453:1516" ph="INSERT INTO PERSON... " />
+                <marker date="1540774577767" expanded="true" signature="1453:1519" ph="INSERT INTO PERSON... " />
+                <marker date="1540774577767" expanded="true" signature="1453:1526" ph="INSERT INTO PERSON... " />
+                <marker date="1540774577767" expanded="true" signature="1453:1531" ph="INSERT INTO PERSON... " />
+                <marker date="1540774577767" expanded="true" signature="1545:1577" ph="SELECT * FRO... PERSON" />
+                <marker date="1540774577767" expanded="true" signature="1598:1671" ph="UPDATE PERSON... " />
               </folding>
             </state>
           </provider>
@@ -32,18 +32,18 @@
       <file leaf-file-name="MedicalRecords.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/MedicalRecords.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="613">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicalRecord.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MedicalRecord.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/MedicalRecord.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="127">
+              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="Dao.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Dao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="165">
               <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
               <folding />
             </state>
@@ -72,8 +72,8 @@
       <file leaf-file-name="SqlController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/SqlController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="12">
+              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <marker date="1540773951312" expanded="true" signature="148:225" ph="CREATE TABLE... PERSON" />
                 <marker date="1540773951312" expanded="true" signature="228:371" ph="CREATE TABLE... USER" />
@@ -103,8 +103,18 @@
       <file leaf-file-name="DataController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/DataController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="805">
               <caret line="59" column="90" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Patients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/Patients.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -140,13 +150,13 @@
         <option value="$PROJECT_DIR$/php/Patients.php" />
         <option value="$PROJECT_DIR$/php/DoctorsDao.php" />
         <option value="$PROJECT_DIR$/php/DataController.php" />
-        <option value="$PROJECT_DIR$/php/MedicalRecords.php" />
-        <option value="$PROJECT_DIR$/php/MedicalRecord.php" />
         <option value="$PROJECT_DIR$/php/PatientsDao.php" />
         <option value="$PROJECT_DIR$/php/SqlController.php" />
         <option value="$PROJECT_DIR$/php/MedicalRecordsDao.php" />
         <option value="$PROJECT_DIR$/php/Dao.php" />
         <option value="$PROJECT_DIR$/php/index.php" />
+        <option value="$PROJECT_DIR$/php/MedicalRecords.php" />
+        <option value="$PROJECT_DIR$/php/MedicalRecord.php" />
       </list>
     </option>
   </component>
@@ -243,12 +253,12 @@
       <workItem from="1540682900307" duration="3266000" />
       <workItem from="1540746864435" duration="1308000" />
       <workItem from="1540748719912" duration="19349000" />
-      <workItem from="1540771675225" duration="2302000" />
+      <workItem from="1540771675225" duration="2702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32465000" />
+    <option name="totallyTimeSpent" value="32865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -508,6 +518,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,14 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Patients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/DoctorsDao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -599,26 +602,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/MedicalRecords.php">
+    <entry file="file://$PROJECT_DIR$/php/DataController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="805">
+          <caret line="59" column="90" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/MedicalRecord.php">
+    <entry file="file://$PROJECT_DIR$/php/Patients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="427">
+          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/SqlController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        <state relative-caret-position="12">
+          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <marker date="1540773951312" expanded="true" signature="148:225" ph="CREATE TABLE... PERSON" />
             <marker date="1540773951312" expanded="true" signature="228:371" ph="CREATE TABLE... USER" />
@@ -644,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/DataController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="59" column="90" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/MedicalRecordsDao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -662,7 +657,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/Dao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="165">
           <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
           <folding />
         </state>
@@ -670,17 +665,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
           <folding>
-            <marker date="1540774117411" expanded="true" signature="1465:1526" ph="INSERT INTO PERSON... " />
-            <marker date="1540774117411" expanded="true" signature="1465:1528" ph="INSERT INTO PERSON... " />
-            <marker date="1540774117411" expanded="true" signature="1465:1531" ph="INSERT INTO PERSON... " />
-            <marker date="1540774117411" expanded="true" signature="1465:1538" ph="INSERT INTO PERSON... " />
-            <marker date="1540774117411" expanded="true" signature="1465:1543" ph="INSERT INTO PERSON... " />
-            <marker date="1540774117411" expanded="true" signature="1557:1589" ph="SELECT * FRO... PERSON" />
-            <marker date="1540774117411" expanded="true" signature="1610:1683" ph="UPDATE PERSON... " />
+            <marker date="1540774577767" expanded="true" signature="1453:1514" ph="INSERT INTO PERSON... " />
+            <marker date="1540774577767" expanded="true" signature="1453:1516" ph="INSERT INTO PERSON... " />
+            <marker date="1540774577767" expanded="true" signature="1453:1519" ph="INSERT INTO PERSON... " />
+            <marker date="1540774577767" expanded="true" signature="1453:1526" ph="INSERT INTO PERSON... " />
+            <marker date="1540774577767" expanded="true" signature="1453:1531" ph="INSERT INTO PERSON... " />
+            <marker date="1540774577767" expanded="true" signature="1545:1577" ph="SELECT * FRO... PERSON" />
+            <marker date="1540774577767" expanded="true" signature="1598:1671" ph="UPDATE PERSON... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/MedicalRecords.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/MedicalRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

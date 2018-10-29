@@ -20,11 +20,11 @@ $pwd = "BBBBBBBBB";
 //DataController::getIt()->updateDoctor('12018180','Kaulitz','brit');
 //DataController::getIt()->updatePatient($name,$CPF,'123456789','Ul@gmail.com','O+','AMIL','all possibles');
 
-print_r(DataController::getIt()->searchMedicalRecord($CPF));
+echo DataController::getIt()->searchMedicalRecord($CPF);
 echo "<br/>";
-print_r(DataController::getIt()->searchPatient($CPF));
+echo DataController::getIt()->searchPatient($CPF);
 echo "<br/>";
-print_r(DataController::getIt()->searchDoctor('12018180'));
+echo DataController::getIt()->searchDoctor('12018180');
 /*
 $p->getIt()->insertDoctor(1100000,"kau","olar");
 $host = '127.0.0.1';

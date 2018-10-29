@@ -16,7 +16,7 @@ class MedicalRecord{
      * @param $data
      * @param $CPF
      */
-    public function __construct($data, $CPF)
+    public function __construct( $CPF,$data)
     {
         $this->data = $data;
         $this->CPF = $CPF;
@@ -53,7 +53,10 @@ class MedicalRecord{
     {
         $this->CPF = $CPF;
     }
-
+    public function __toString()
+    {
+        return $this->CPF;
+    }
 
    
 }

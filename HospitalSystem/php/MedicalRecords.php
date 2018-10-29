@@ -49,4 +49,6 @@ class MedicalRecords implements Singleton,RetrieveData
         }
         return self::$medicalRecords;
     }
+
+
 }
