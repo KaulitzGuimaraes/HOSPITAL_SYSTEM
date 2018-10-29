@@ -100,7 +100,6 @@ WHERE PERSON.CPF = PATIENT.CPF
          INSERT INTO $tableName ($parameters)
                           VALUES ($values);
          ";
-
          return $sql;
      }
 

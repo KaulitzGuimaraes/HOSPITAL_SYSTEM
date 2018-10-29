@@ -26,11 +26,11 @@ class MedicalRecords implements Singleton,RetrieveData
         return new MedicalRecord($CPF,$data);
     }
     public  function insert($CPF,$data){
-        $this->doctorHash->addItem($CPF,$this->createMedicalRecord($CPF,$data));
+        $this->medicalRecordsHash->addItem($CPF,$this->createMedicalRecord($CPF,$data));
     }
 
     public  function search($CPF){
-        return $this->doctorHash->getItem($CPF);
+        return $this->medicalRecordsHash->getItem($CPF);
 
     }
 

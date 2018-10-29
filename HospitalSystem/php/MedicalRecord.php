@@ -12,6 +12,18 @@ class MedicalRecord{
    private $CPF;
 
     /**
+     * MedicalRecord constructor.
+     * @param $data
+     * @param $CPF
+     */
+    public function __construct($data, $CPF)
+    {
+        $this->data = $data;
+        $this->CPF = $CPF;
+    }
+
+
+    /**
      * @return mixed
      */
     public function getData(){

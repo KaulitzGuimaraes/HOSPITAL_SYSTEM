@@ -11,12 +11,17 @@ require_once ('SqlController.php');
 require_once ("Patients.php");
 require_once ("DoctorsDao.php");
 require_once ("DataController.php");
-$CPF = '444444';
-$name = "Thalles";
+$CPF = '11111111';
+$name = "Ulisses";
 $pwd = "BBBBBBBBB";
-
-DataController::getIt()->createPatient($name,$CPF,'123456789','Kau@gmail.com','O+','bradesco','all possibles');
+//DataController::getIt()->createDoctor('12018180','Kaulitz','rihanna');
+//DataController::getIt()->createPatient($name,$CPF,'123456789','Ul@gmail.com','O+','bradesco','all possibles');
+//DataController::getIt()->createMedicalRecord($CPF,"IDK what is that");
+print_r(DataController::getIt()->searchMedicalRecord($CPF));
+echo "<br/>";
 print_r(DataController::getIt()->searchPatient($CPF));
+echo "<br/>";
+print_r(DataController::getIt()->searchDoctor('12018180'));
 /*
 $p->getIt()->insertDoctor(1100000,"kau","olar");
 $host = '127.0.0.1';

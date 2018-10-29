@@ -13,8 +13,8 @@ class PatientsDao implements DaoRetrieve {
 
     static function create($name,$CPF,$tel, $email, $bloodType, $healthPlan, $allergies){
          Dao::createPerson($name,$CPF);
-         Dao::create("tel,email, bloodType, healthPlan, allergies",
-             "'$tel','$email','$bloodType','$healthPlan','$allergies'",
+         Dao::create("CPF,tel,email, bloodType, healthPlan, allergies",
+             "'$CPF','$tel','$email','$bloodType','$healthPlan','$allergies'",
              self::$tableName );
     }
 
