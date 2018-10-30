@@ -15,10 +15,7 @@ require_once ("MedicalRecordsDao.php");
 class DataController implements Singleton {
 
      private static $datC;
-     private $currentUser;
-
-
-
+     
     /**
      * DataController constructor.
      */
@@ -30,10 +27,6 @@ class DataController implements Singleton {
 
     private function loadData($obj,$data){
         $obj->retrieve($data);
-    }
-
-    public function login($username,$pwd){
-        $this->currentUser = Doctors::getIt()->search($username);
     }
 
     public  function updateDoctor($CPF,$name,$pwd){

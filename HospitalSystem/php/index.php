@@ -11,13 +11,14 @@ require_once ('SqlController.php');
 require_once ("Patients.php");
 require_once ("DoctorsDao.php");
 require_once ("DataController.php");
+require_once ("LoginController.php");
 $CPF = '11111111';
 $name = "Ulisses";
 $pwd = "BBBBBBBBB";
 //DataController::getIt()->createDoctor('12018180','Kaulitz','rihanna');
 //DataController::getIt()->createPatient($name,$CPF,'123456789','Ul@gmail.com','O+','bradesco','all possibles');
 //DataController::getIt()->createMedicalRecord($CPF,"IDK what is that");
-//DataController::getIt()->updateDoctor('12018180','Kaulitz','brit');
+//DataController::getIt()->updateDoctor('12018180','Kaulitz','rihanna');
 //DataController::getIt()->updatePatient($name,$CPF,'123456789','Ul@gmail.com','O+','AMIL','all possibles');
 
 echo DataController::getIt()->searchMedicalRecord($CPF);
@@ -25,6 +26,12 @@ echo "<br/>";
 echo DataController::getIt()->searchPatient($CPF);
 echo "<br/>";
 echo DataController::getIt()->searchDoctor('12018180');
+LoginController::getIt()->login('12018180' ,'rihanna');
+echo "<br/>";
+echo LoginController::getIt()->getCurrentUser();
+LoginController::getIt()->logout();
+echo "<br/>";
+echo LoginController::getIt()->getCurrentUser();
 /*
 $p->getIt()->insertDoctor(1100000,"kau","olar");
 $host = '127.0.0.1';

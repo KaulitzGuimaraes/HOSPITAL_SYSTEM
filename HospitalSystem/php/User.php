@@ -38,7 +38,8 @@ abstract class  User extends Person implements AccessManagement{
     public function getPwd(){
         return $this->pwd;
     }
-
+    
+  
     /**
      * @return mixed
      */
