@@ -4,13 +4,24 @@
     <title>Título da página</title>
     <meta charset="utf-8">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
 
 <h1>HOSPITAL SYSTEM</h1>
 <header> Group names</header>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">HPS</a>
+        </div>
+        <ul class="nav navbar-nav">
 
+        </ul>
+    </div>
+</nav>
 <div class="container">
     <div class="jumbotron">
         <h2>Login</h2>
@@ -19,7 +30,7 @@
             <input name="username" type="text" required/> <br/>
             Password : <br/>
             <input name="pwd" type="password" required/><br/><br/>
-            <button name="submit" type="submit">Submit</button><br/>
+            <button name="doctors" type="submit">Submit</button><br/>
         </form>
     </div>
 </div>
@@ -39,9 +50,14 @@ if (isset($_GET['submit'])){
     $pwd = $_GET['pwd'];
 
     if( DataController::getIt()->doLogin($user,$pwd) == false){
-        echo "ERROR";
+       echo '<script type="text/javascript">',
+        'alert("CANNOT DO THIS OPERATION")',
+        '</script>';
     }else{
-        echo DataController::getIt()->getCurrentUser()->getName();
+        if(DataController::getIt()->getCurrentUser()->IsAnAdmin())
+             header("Location: AdminPage.php");
+        else
+            header("Location: DoctorsPage.php");
     }
 
 

@@ -20,12 +20,19 @@ class HashMap{
             $this->hasMap[$key] = $value;
     }
     function getItem($key){
+
         if (!isset($this->hasMap[$key])) {
             return null;
         }
-        return $this->hasMap[$key];
+        return $this->hasMap[trim($key)];
     }
-
+   function  getAll(){
+        $arr = array();
+        foreach ($this->hasMap as $key){
+            array_push($arr,$key);
+        }
+        return $arr;
+   }
 
 
 }

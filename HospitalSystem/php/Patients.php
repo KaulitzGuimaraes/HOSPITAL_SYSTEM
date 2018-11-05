@@ -43,6 +43,9 @@ class Patients implements Singleton,RetrieveData
 
         }
     }
+    public function getAll(){
+        return $this->patientsHash->getAll();
+    }
 
     /**
      * @return mixed

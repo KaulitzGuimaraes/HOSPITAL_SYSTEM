@@ -83,9 +83,13 @@ class DataController implements Singleton
         return LoginController::getIt()->getCurrentUser();
 
     }
+    public function showAllPatients(){
+        return Patients::getIt()->getAll();
+    }
     public function logout(){
          LoginController::getIt()->logout();
     }
+
     static public function getIt(){
         if (self::$datC === null) {
             self::$datC = new DataController();
