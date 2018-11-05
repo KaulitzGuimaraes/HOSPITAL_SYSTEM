@@ -21,7 +21,7 @@ class Admin extends User implements Singleton
      */
     protected function __construct()
     {
-        parent::__construct("admin","admin","admn","admin");
+        parent::__construct("admin","admin","admin","admin");
 
     }
 

@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<h1>HOSPITAL SYSTEM</h1>
+<header> Group names</header>
+
+<div class="container">
+    <div class="jumbotron">
+        <h2>Login</h2>
+        <form>
+            Username :<br/>
+            <input name="username" type="text" required/> <br/>
+            Password : <br/>
+            <input name="pwd" type="password" required/><br/><br/>
+            <button name="submit" type="submit">Submit</button><br/>
+        </form>
+    </div>
+</div>
 <?php
 /**
  * Created by PhpStorm.
@@ -6,68 +31,57 @@
  * Time: 22:11
  */
 
-require_once ("Doctors.php");
-require_once ('SqlController.php');
-require_once ("Patients.php");
-require_once ("DoctorsDao.php");
 require_once ("DataController.php");
-require_once ("LoginController.php");
-$CPF = '11111111';
-$name = "Ulisses";
-$pwd = "BBBBBBBBB";
-//DataController::getIt()->createDoctor('12018180','Kaulitz','rihanna');
-//DataController::getIt()->createPatient($name,$CPF,'123456789','Ul@gmail.com','O+','bradesco','all possibles');
-//DataController::getIt()->createMedicalRecord($CPF,"IDK what is that");
-//DataController::getIt()->updateDoctor('12018180','Kaulitz','rihanna');
-//DataController::getIt()->updatePatient($name,$CPF,'123456789','Ul@gmail.com','O+','AMIL','all possibles');
-
-echo DataController::getIt()->searchMedicalRecord($CPF);
-echo "<br/>";
-echo DataController::getIt()->searchPatient($CPF);
-echo "<br/>";
-echo DataController::getIt()->searchDoctor('12018180');
-LoginController::getIt()->login('12018180' ,'rihanna');
-echo "<br/>";
-echo LoginController::getIt()->getCurrentUser();
-LoginController::getIt()->logout();
-echo "<br/>";
-echo LoginController::getIt()->getCurrentUser();
-/*
-$p->getIt()->insertDoctor(1100000,"kau","olar");
-$host = '127.0.0.1';
-$db   = 'HPS';
-$user = 'root';
-$pass = 'mysql';
-$charset = 'utf8mb4';
-
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
-];
-$a = $p->getit()->searchDoctor(1100000);
-$b = $a->getName();
-try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
-   /* $pdo->query("INSERT INTO PERSON (CPF,nam)
-                          VALUES ('$a','$b');"
-
-);
-   $sql = " SELECT * 
-           FROM PERSON
-   ";
-
-    $sql2 =" UPDATE PERSON 
-             SET nam ='Kaulitz'
-             WHERE  CPF = $a
-    ";
-    $pdo->query($sql2);
-    $result = $pdo->query($sql);
-        print_r($result->fetch(PDO::FETCH_ASSOC));
 
 
-} catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+if (isset($_GET['submit'])){
+    $user = $_GET['username'];
+    $pwd = $_GET['pwd'];
+
+    if( DataController::getIt()->doLogin($user,$pwd) == false){
+        echo "ERROR";
+    }else{
+        echo DataController::getIt()->getCurrentUser()->getName();
+    }
+
+
 }
-*/
+
+?>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

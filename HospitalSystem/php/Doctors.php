@@ -43,9 +43,12 @@ class Doctors implements Singleton, RetrieveData
     }
 
     public function machPwd($username,$pwd,&$usr){
+
         try{
             $concat = $username. $pwd;
-             if(Admin::getIt() === $concat ){
+
+             if(Admin::getIt() == trim($concat )){
+
                     $usr = Admin::getIt();
                     return true;
              }else{   
@@ -58,6 +61,7 @@ class Doctors implements Singleton, RetrieveData
             return $isPwdMatching;
         }
         }catch(Exception $e){
+
                 $usr = null;
                 return false;
         }
