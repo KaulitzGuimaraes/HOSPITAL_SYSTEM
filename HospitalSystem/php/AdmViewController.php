@@ -6,7 +6,7 @@
  * Time: 19:58
  */
 
-class ViewController
+class AdmViewController
 {
    public static function getSearchDoctorsForm(){
        echo '<div class ="container">

@@ -34,37 +34,37 @@
 <?php
 
 require_once ("DataController.php");
-require_once ("ViewController.php");
+require_once("AdmViewController.php");
 if (isset($_GET['doctors1'])){
-ViewController::getSearchDoctorsForm();
+AdmViewController::getSearchDoctorsForm();
 }
 if (isset($_GET['doctors2'])){
-    ViewController::getRegisterDoctorsForm();
+    AdmViewController::getRegisterDoctorsForm();
 }
 if (isset($_GET['searchdoctors'])){
-    ViewController::searchDoctor();
+    AdmViewController::searchDoctor();
 }
 if (isset($_GET['register'])){
-    ViewController::registerDoctor();
+    AdmViewController::registerDoctor();
 }
 if(isset($_GET['patients1'])){
-    ViewController:: getPatientForm();
+    AdmViewController:: getPatientForm();
 }
 
 if(isset($_GET['patients2'])){
-   ViewController:: getPatientSearchForm();
+   AdmViewController:: getPatientSearchForm();
 }
 if(isset($_GET['patients3'])){
-    ViewController::seeAll();
+    AdmViewController::seeAll();
 }
 if(isset($_GET['registerP'])){
-    ViewController::registerPatient();
+    AdmViewController::registerPatient();
 }
 if (isset($_GET['searchP'])){
-    ViewController::searchPatient();
+    AdmViewController::searchPatient();
 }
 if (isset($_GET['logout'])){
-   ViewController::logout();
+   AdmViewController::logout();
 }
 ?>
 </body>
