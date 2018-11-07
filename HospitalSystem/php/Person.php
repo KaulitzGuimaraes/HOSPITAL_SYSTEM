@@ -45,5 +45,6 @@ abstract class Person{
 
      return (string)$this->CPF;
   }
+    abstract public function isAPatient();
 
 }

@@ -30,7 +30,7 @@
             <input name="username" type="text" required/> <br/>
             Password : <br/>
             <input name="pwd" type="password" required/><br/><br/>
-            <button name="doctors" type="submit">Submit</button><br/>
+            <button name="submit" type="submit">Submit</button><br/>
         </form>
     </div>
 </div>

@@ -134,6 +134,8 @@ class Patient extends Person
     }
 
 
-
-
+    public function isAPatient()
+    {
+        return true;
+    }
 }

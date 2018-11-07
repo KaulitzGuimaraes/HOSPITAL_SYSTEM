@@ -8,24 +8,37 @@
 
 class ViewController
 {
-   public static function getDoctorsForm(){
+   public static function getSearchDoctorsForm(){
        echo '<div class ="container">
         <div class="jumbotron">
-         <h2> Register/Find a doctor</h2>
+         <h2> Find a doctor</h2>
     <form>
     cpf :<br/>
     <input name="cpf" type="text" required/> <br/>
-    <button name="search" type="submit">search</button><br/>
-    Name :<br/>
-    <input name="name" type="text" /> <br/>
-    Pwd :<br/>
-    <input name="pwd" type="password" /> <br/>
-    <button name="register" type="submit">register</button><br/>
+    <button name="searchdoctors" type="submit">search</button><br/>
     </form>
    
 </div>
 </div>';
    }
+
+    public static function getRegisterDoctorsForm(){
+        echo '<div class ="container">
+        <div class="jumbotron">
+         <h2> Register a doctor</h2>
+    <form>
+    cpf :<br/>
+    <input name="cpf" type="text" required /> <br/>
+    Name :<br/>
+    <input name="name" type="text" required/> <br/>
+    Pwd :<br/>
+    <input name="pwd" type="password" required /> <br/>
+    <button name="register" type="submit">register</button><br/>
+    </form>
+   
+</div>
+</div>';
+    }
 
    public static function searchDoctor(){
        try{
@@ -45,7 +58,7 @@ class ViewController
     Name : '.$doctorName . ' <br/>
     CPF :'. $doctorCPF .'<br/>
 </p><br/>
- <button name="submit" type="submit"><a href="AdminPage.php?doctors=bar"> back </a></button><br/>
+ <button name="submit" type="submit"><a href="AdminPage.php?doctors1=bar"> back </a></button><br/>
         </div>
         </div>
               
@@ -53,7 +66,7 @@ class ViewController
 
        }catch (Exception $e){
            SqlController::getErrorPopUp();
-           self::getDoctorsForm();
+           self::getSearchDoctorsForm();
        }
    }
 
@@ -65,7 +78,7 @@ $cpf = $_GET['cpf'];
 $name = $_GET['name'];
 $pwd = $_GET['pwd'];
 $doctor = DataController::getIt()->searchDoctor(trim($cpf));
-if($doctor != null  | ($name == null | $cpf == null))
+if($doctor != null )
 throw new Exception();
 DataController::getIt()->createDoctor($cpf,$name,$pwd);
 echo '<script type="text/javascript">',
@@ -76,31 +89,45 @@ echo '<script type="text/javascript">',
     SqlController::getErrorPopUp();
 
 }finally{
-    self::getDoctorsForm();
+    self::getRegisterDoctorsForm();
 }
 }
+public static  function getPatientSearchForm()
+{
 
-public static function getPatientForm(){
-     echo '
+    echo '
      <div class="container">
      <div class="jumbotron">
-     <h2>Register/Find a patient</h2>
+     <h2>Find a patient</h2>
       <form>
     cpf :<br/>
     <input name="cpf" type="text" required/> <br/>
     <button name="searchP" type="submit">search</button><br/>
+    </form>
+</div>
+</div>
+     ';
+}
+public static function getPatientForm(){
+     echo '
+     <div class="container">
+     <div class="jumbotron">
+     <h2>Register/Update a patient</h2>
+      <form>
+    cpf :<br/>
+    <input name="cpf" type="text" required/> <br/>
     Name :<br/>
-    <input name="name" type="text" /> <br/>
+    <input name="name" type="text" required /> <br/>
     Blood type :<br/>
-    <input name="bloody" type="text" /> <br/>
+    <input name="bloody" type="text" required /> <br/>
      E-mail :<br/>
-    <input name="email" type="text" /> <br/>
+    <input name="email" type="email"  required/> <br/>
       Health plan :<br/>
-    <input name="health" type="text" /> <br/>
+    <input name="health" type="text" required /> <br/>
      Tel :<br/>
-    <input name="tel" type="text" /> <br/>
+    <input name="tel" type="text"  required/> <br/>
       Allergies :<br/>
-    <input name="alle" type="text" /> <br/>
+    <input name="alle" type="text" required /> <br/>
     <button name="registerP" type="submit">register</button><br/>
     </form>
 </div>
@@ -109,16 +136,17 @@ public static function getPatientForm(){
 }
 
     public static  function registerPatient(){
+        $cpf = $_GET['cpf'];
+        $name = $_GET['name'];
+        $email =  $_GET['email'];
+        $bloodyTipe = $_GET['bloody'];
+        $healthPlan = $_GET['health'];
+        $alergies =  $_GET['alle'];
+        $tel = $_GET['tel'];
         try{
-            $cpf = $_GET['cpf'];
-            $name = $_GET['name'];
-            $email =  $_GET['email'];
-            $bloodyTipe = $_GET['bloody'];
-            $healthPlan = $_GET['health'];
-            $alergies =  $_GET['alle'];
-            $tel = $_GET['tel'];
+
             $pat = DataController::getIt()->searchPatient(trim($cpf));
-            if($pat != null  | ($name == null | $cpf == null))
+            if($pat != null )
                 throw new Exception();
             DataController::getIt()->createPatient($name,$cpf,$tel,$email,$bloodyTipe,$healthPlan,$alergies);
             echo '<script type="text/javascript">',
@@ -126,7 +154,15 @@ public static function getPatientForm(){
             '</script>';
 
         }catch (Exception $e){
-            SqlController::getErrorPopUp();
+            try{
+                DataController::getIt()->updatePatient($name,$cpf,$tel,$email,$bloodyTipe,$healthPlan,$alergies);
+                echo '<script type="text/javascript">',
+                'alert("UPDATED WITH SUCCESS")',
+                '</script>';
+            }catch (Exception $e){
+                SqlController::getErrorPopUp();
+            }
+
 
         }finally{
             self::getPatientForm();
@@ -141,6 +177,14 @@ public static function searchPatient(){
             throw new Exception();
         $patName = $pat->getName();
         $patCPF =  $pat->getCPF();
+        $patTel = $pat->getTel();
+        $patEmail = $pat->getEmail();
+        $patBlood = $pat->getBloodType();
+        $patHealth = $pat->getHealthPlan();
+        $patAll = $pat->getAllergies();
+        $patMR = DataController::getIt()->searchMedicalRecord($patCPF);
+        if($patMR == null)
+            $patMR = "No medical records";
         echo '<div class ="container">
         <div class="jumbotron">
         <h2>
@@ -149,8 +193,14 @@ public static function searchPatient(){
     <p>
     Name : '.$patName . ' <br/>
     CPF :'. $patCPF .'<br/>
+    Tel : '.$patTel . '<br/>
+    Blood Type : '.$patBlood . '<br/>
+    Email : '.$patEmail . '<br/>
+    Health Plan : '.$patHealth . '<br/>
+    Allergies : '.$patAll . '<br/>
+    Medical Record : '.$patMR . '<br/>
 </p><br/>
- <button name="submit" type="submit"><a href="AdminPage.php?patients=bar"> back </a></button><br/>
+ <button name="submit" type="submit"><a href="AdminPage.php?patients2=bar"> back </a></button><br/>
         </div>
         </div>
               
@@ -158,8 +208,66 @@ public static function searchPatient(){
 
     }catch (Exception $e){
         SqlController::getErrorPopUp();
-        self::getPatientForm();
+        self::getPatientSearchForm();
     }
+}
+    public static function seeAll(){
+        try{
+
+           $result = '';
+            $pats = DataController::getIt()->showAllPatients();
+            if($pats == null)
+                throw new Exception();
+            foreach ($pats as $pat){
+
+
+                $patName = $pat->getName();
+                $patCPF =  $pat->getCPF();
+                $patTel = $pat->getTel();
+                $patEmail = $pat->getEmail();
+                $patBlood = $pat->getBloodType();
+                $patHealth = $pat->getHealthPlan();
+                $patAll = $pat->getAllergies();
+                $patMR = DataController::getIt()->searchMedicalRecord($patCPF);
+                if($patMR == null)
+                    $patMR = "No medical records";
+
+
+
+            $result = $result .'    <p>
+                Name : '.$patName . ' <br/>
+    CPF :'. $patCPF .'<br/>
+    Tel : '.$patTel . '<br/>
+    Blood Type : '.$patBlood . '<br/>
+    Email : '.$patEmail . '<br/>
+    Health Plan : '.$patHealth . '<br/>
+    Allergies : '.$patAll . '<br/>
+    Medical Record : '.$patMR . '<br/>
+</p><br/>';
+
+            }
+
+            echo '<div class ="container">
+        <div class="jumbotron">
+        <h2>
+        RESULT :
+</h2>
+    '.$result.'
+ <button name="submit" type="submit"><a href="AdminPage.php?patients2=bar"> back </a></button><br/>
+        </div>
+        </div>
+              
+         ';
+
+        }catch (Exception $e){
+            SqlController::getErrorPopUp();
+            self::getPatientSearchForm();
+        }
+    }
+
+public static  function logout(){
+       DataController::getIt()->logout();
+    header("Location: Index.php");
 }
 
 }

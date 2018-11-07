@@ -18,12 +18,15 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">HPS</a>
+            <a class="navbar-brand" >HPS</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a> </li>
-            <li class="active"><a  name="doctors" href="AdminPage.php?doctors=bar">Doctors</a></li>
-            <li><a href="AdminPage.php?patients=bar">Patients</a></li>
+            <li class="active"><a  name="doctors" href="AdminPage.php?doctors1=bar">Find a Doctor</a></li>
+            <li ><a  name="register" href="AdminPage.php?doctors2=bar">Register a Doctor</a></li>
+            <li class="active"><a href="AdminPage.php?patients1=bar">Register/Update Patients</a></li>
+            <li ><a href="AdminPage.php?patients2=bar">Search a Patient</a></li>
+            <li class="active"><a href="AdminPage.php?patients3=bar">See all Patients</a></li>
+            <li class="active"><a href="AdminPage.php?logout=bar">logout</a></li>
         </ul>
     </div>
 </nav>
@@ -32,23 +35,36 @@
 
 require_once ("DataController.php");
 require_once ("ViewController.php");
-if (isset($_GET['doctors'])){
-ViewController::getDoctorsForm();
+if (isset($_GET['doctors1'])){
+ViewController::getSearchDoctorsForm();
 }
-if (isset($_GET['search'])){
+if (isset($_GET['doctors2'])){
+    ViewController::getRegisterDoctorsForm();
+}
+if (isset($_GET['searchdoctors'])){
     ViewController::searchDoctor();
 }
 if (isset($_GET['register'])){
     ViewController::registerDoctor();
 }
-if(isset($_GET['patients'])){
-   ViewController:: getPatientForm();
+if(isset($_GET['patients1'])){
+    ViewController:: getPatientForm();
+}
+
+if(isset($_GET['patients2'])){
+   ViewController:: getPatientSearchForm();
+}
+if(isset($_GET['patients3'])){
+    ViewController::seeAll();
 }
 if(isset($_GET['registerP'])){
     ViewController::registerPatient();
 }
 if (isset($_GET['searchP'])){
     ViewController::searchPatient();
+}
+if (isset($_GET['logout'])){
+   ViewController::logout();
 }
 ?>
 </body>

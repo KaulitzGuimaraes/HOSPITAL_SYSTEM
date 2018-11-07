@@ -47,5 +47,10 @@ abstract class  User extends Person implements AccessManagement{
         return $this->username;
     }
 
+    public function isAPatient()
+    {
+        return false;
+    }
+
 
 }
