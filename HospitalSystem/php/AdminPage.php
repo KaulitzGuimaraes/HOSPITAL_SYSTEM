@@ -30,7 +30,7 @@
         </ul>
     </div>
 </nav>
-</form>
+
 <?php
 
 require_once ("DataController.php");
@@ -61,7 +61,7 @@ if(isset($_GET['registerP'])){
     AdmViewController::registerPatient();
 }
 if (isset($_GET['searchP'])){
-    AdmViewController::searchPatient();
+    AdmViewController::searchPatient('AdminPage.php');
 }
 if (isset($_GET['logout'])){
    AdmViewController::logout();
