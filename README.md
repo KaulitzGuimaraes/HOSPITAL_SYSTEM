@@ -6,6 +6,8 @@
  2.  Create a new db called __HPS__
  3. Open class **SqlController**
  4. Remove the comment in line #77 `` self::runExec($query); ``
- 5. Open index.php normally
- 6.  Back to that line mentioned on item #3 , comment it again.
+ 5. Check the __$pass__ variable value. If you are using __xammps__, switch to this value  
+ ``$pass =''`` Or whatever your SGBD password is.
+ 6. Open index.php normally
+ 7.  Back to that line mentioned on item #3 , comment it again.
  
