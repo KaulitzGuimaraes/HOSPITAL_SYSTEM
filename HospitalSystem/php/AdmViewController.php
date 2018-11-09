@@ -226,9 +226,9 @@ public static function getPatientForm(){
         $healthPlan = $_GET['health'];
         $alergies =  $_GET['alle'];
         $tel = $_GET['tel'];
+        $pat = DataController::getIt()->searchPatient(trim($cpf));
         try{
 
-            $pat = DataController::getIt()->searchPatient(trim($cpf));
             if($pat != null )
                 throw new Exception();
             DataController::getIt()->createPatient($name,$cpf,$tel,$email,$bloodyTipe,$healthPlan,$alergies);
@@ -238,6 +238,8 @@ public static function getPatientForm(){
 
         }catch (Exception $e){
             try{
+                if($pat != null )
+                    throw new Exception();
                 DataController::getIt()->updatePatient($name,$cpf,$tel,$email,$bloodyTipe,$healthPlan,$alergies);
                 echo '<script type="text/javascript">',
                 'alert("UPDATED WITH SUCCESS")',
