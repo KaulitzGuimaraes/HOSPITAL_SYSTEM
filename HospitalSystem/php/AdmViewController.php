@@ -270,6 +270,8 @@ public static function searchPatient($page ){
         $patMR = DataController::getIt()->searchMedicalRecord($patCPF);
         if($patMR == null)
             $patMR = "No medical records";
+        else
+            $patMR = $patMR->getData();
         echo '<div class ="container wrapper">
         <div class="jumbotron main">
         <h2>
