@@ -28,7 +28,7 @@
         <h2>Login</h2>
         <form>
             <div class="form-group">
-                <label > Username :</label>
+                <label > Username (CPF):</label>
             <input name="username"  class="form-control"  type="text" required/> <br/>
                 <label> Password : </label>
             <input name="pwd"  class="form-control"  type="password" required/><br/>

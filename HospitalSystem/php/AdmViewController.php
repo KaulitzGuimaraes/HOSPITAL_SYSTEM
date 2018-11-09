@@ -238,8 +238,6 @@ public static function getPatientForm(){
 
         }catch (Exception $e){
             try{
-                if($pat != null )
-                    throw new Exception();
                 DataController::getIt()->updatePatient($name,$cpf,$tel,$email,$bloodyTipe,$healthPlan,$alergies);
                 echo '<script type="text/javascript">',
                 'alert("UPDATED WITH SUCCESS")',
@@ -303,6 +301,7 @@ public static function searchPatient($page ){
 
            $result = '';
             $pats = DataController::getIt()->showAllPatients();
+            if($result == null)
             if($pats == null)
                 throw new Exception();
             foreach ($pats as $pat){
@@ -349,8 +348,14 @@ public static function searchPatient($page ){
          ';
 
         }catch (Exception $e){
-            SqlController::getErrorPopUp();
-            self::getPatientSearchForm();
+           echo  "
+            '<div class =\"container table-wrapper-scroll-y\" style=\"text-align: left;\">
+             <div class=\"jumbotron\">
+             No results !
+             </div>
+           </div>
+           
+           ";
         }
     }
 

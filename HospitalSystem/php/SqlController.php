@@ -8,7 +8,7 @@
 
 class SqlController
 {
-    public static $queryTables = "
+    public static $query = "
    CREATE TABLE PERSON (
 CPF VARCHAR(255),
 name VARCHAR(255),
@@ -74,7 +74,7 @@ WHERE PERSON.CPF = PATIENT.CPF
                 ];
                 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
                 self::$pdo = new PDO($dsn, $user, $pass, $options);
-                //self::runExec($query);
+              //  self::runExec(self::$query);
             }
 
         } catch (\PDOException $e) {
