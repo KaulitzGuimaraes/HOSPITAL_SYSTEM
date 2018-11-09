@@ -9,5 +9,6 @@
  5. Check the __$pass__ variable value. If you are using __xammps__, switch to this value  
  ``$pass =''`` Or whatever your SGBD password is.
  6. Open index.php normally
- 7.  Back to that line mentioned on item #3 , comment it again.
+ 7. Login with admin account ( user : admin , pwd : admin)
+ 8.  Back to that line mentioned on item #3 , comment it again.
  
