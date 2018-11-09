@@ -52,7 +52,7 @@ if (isset($_GET['submit'])){
     $user = $_GET['username'];
     $pwd = $_GET['pwd'];
 
-    if( DataController::getIt()->doLogin($user,$pwd) == false){
+    if( DataController::getIt()->doLogin($user,$pwd) === false){
        echo '<script type="text/javascript">',
         'alert("CANNOT DO THIS OPERATION")',
         '</script>';

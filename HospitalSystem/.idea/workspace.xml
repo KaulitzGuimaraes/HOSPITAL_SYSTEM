@@ -21,11 +21,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="265">
+              <caret line="54" column="57" lean-forward="false" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
               <folding>
                 <element signature="e#1522#1603#0#PHP" expanded="true" />
               </folding>
@@ -43,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdmViewController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdmViewController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/AdmViewController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1356">
@@ -145,8 +145,8 @@
       <find>getPatientSearchForm</find>
       <find>&lt;input</find>
       <find>table-wrapper</find>
-      <find>type=&quot;submit&quot;</find>
       <find>for=&quot;exampleInputFile&quot;</find>
+      <find>type=&quot;submit&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>jumbotron main&quot;</replace>
@@ -154,9 +154,9 @@
       <replace>main form-group&quot;</replace>
       <replace>type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;</replace>
       <replace>&lt;input class=&quot;form-control&quot;</replace>
+      <replace />
       <replace>type=&quot;submit&quot; class=&quot;btn btn-default&quot;</replace>
       <replace>container wrapper</replace>
-      <replace />
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -186,10 +186,10 @@
         <option value="$PROJECT_DIR$/php/User.php" />
         <option value="$PROJECT_DIR$/php/ViewController.php" />
         <option value="$PROJECT_DIR$/php/hospitalstyle.css" />
-        <option value="$PROJECT_DIR$/php/index.php" />
         <option value="$PROJECT_DIR$/php/AdminPage.php" />
         <option value="$PROJECT_DIR$/php/DoctorsPage.php" />
         <option value="$PROJECT_DIR$/php/AdmViewController.php" />
+        <option value="$PROJECT_DIR$/php/index.php" />
       </list>
     </option>
   </component>
@@ -292,12 +292,12 @@
       <workItem from="1541453447866" duration="5228000" />
       <workItem from="1541548048564" duration="5216000" />
       <workItem from="1541703540398" duration="1550000" />
-      <workItem from="1541722250165" duration="6138000" />
+      <workItem from="1541722250165" duration="6477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57669000" />
+    <option name="totallyTimeSpent" value="58008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -667,48 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/AdminPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#1522#1603#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/DoctorsPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="135" lean-forward="false" selection-start-line="15" selection-start-column="135" selection-end-line="15" selection-end-column="135" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/hospitalstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/AdmViewController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1356">
@@ -762,6 +720,48 @@
             <marker date="1541728572101" expanded="true" signature="10018:10133" ph="..." />
             <marker date="1541728572101" expanded="true" signature="10050:10118" ph="..." />
             <marker date="1541728572101" expanded="true" signature="10063:10086" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/DoctorsPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="135" lean-forward="false" selection-start-line="15" selection-start-column="135" selection-end-line="15" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/hospitalstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/AdminPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="54" column="57" lean-forward="false" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+          <folding>
+            <element signature="e#1522#1603#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
