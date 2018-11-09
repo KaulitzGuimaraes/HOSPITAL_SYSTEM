@@ -38,10 +38,10 @@ CPF VARCHAR(255),
 data VARCHAR(2000),
 FOREIGN KEY(CPF) REFERENCES PERSON (CPF)
 );
-create view doctor 
+create view doctor
 AS
-SELECT * 
-from PERSON as p 
+SELECT *
+from PERSON as p
 INNER JOIN USER as u
 ON u.username = p.CPF;
 
@@ -49,7 +49,7 @@ ON u.username = p.CPF;
 CREATE VIEW PATIENTS
 AS
 SELECT PERSON.CPF, PERSON.name,PATIENT.tel, PATIENT.email,PATIENT.bloodType,PATIENT.healthPlan,PATIENT.allergies
-FROM PATIENT 
+FROM PATIENT
 INNER JOIN PERSON
 WHERE PERSON.CPF = PATIENT.CPF
    ";
@@ -74,7 +74,7 @@ WHERE PERSON.CPF = PATIENT.CPF
                 ];
                 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
                 self::$pdo = new PDO($dsn, $user, $pass, $options);
-
+                //self::runExec($query);
             }
 
         } catch (\PDOException $e) {
@@ -111,7 +111,7 @@ WHERE PERSON.CPF = PATIENT.CPF
      */
     static public function updateQuery($tableName, $setQuery, $condition){
 
-        $sql = " UPDATE $tableName 
+        $sql = " UPDATE $tableName
              SET $setQuery
              WHERE  $condition";
 
@@ -124,7 +124,7 @@ WHERE PERSON.CPF = PATIENT.CPF
      * @return string
      */
     static public function selectAllQuery($tableName){
-        $sql = " SELECT * 
+        $sql = " SELECT *
            FROM $tableName
            ";
         return $sql;
@@ -137,7 +137,7 @@ WHERE PERSON.CPF = PATIENT.CPF
      * @return string
      */
     static public function selectOneQuery($tableName, $condition){
-        $sql = " SELECT * 
+        $sql = " SELECT *
            FROM $tableName
            WHERE $condition ;
            ";
