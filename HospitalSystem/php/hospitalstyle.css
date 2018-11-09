@@ -1,0 +1,42 @@
+body {
+
+    text-align: center;
+}
+
+.wrapper{
+    display: table
+}
+.main{
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    width: 40%;
+    text-align: left;
+}
+.title2{
+    text-align: left;
+    text-decoration: underline;
+}
+.he{
+    background-color: lightgray;
+    font-size: large;
+}
+.table-wrapper-scroll-y {
+    display:block;
+    height:390px;
+    overflow:scroll;
+
+
+}
+.table-wrapper {
+    display: block;
+    height: 390px;
+    text-align: left;
+
+}
+
+.tex-big{
+    height:200px;
+    font-size:14pt;
+
+}
